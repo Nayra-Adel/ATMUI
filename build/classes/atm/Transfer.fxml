@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="587.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="atm.TransferController">
+   <children>
+      <Label layoutX="392.0" layoutY="77.0" text="To Account Number" />
+      <Label layoutX="391.0" layoutY="171.0" text="Ammount" />
+      <ImageView fitHeight="429.0" fitWidth="383.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@atm.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="441.0" layoutY="287.0" onAction="#transfer" prefHeight="25.0" prefWidth="91.0" ripplerFill="BLACK" style="-fx-background-color: #ffef7d;" text="Continue" textFill="#171616">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="transferAmmountTextField" focusColor="#00879d" layoutX="391.0" layoutY="201.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #a6e1ff;" unFocusColor="#4c55d700" />
+      <JFXTextField fx:id="accountNumTextField" focusColor="#00879d" layoutX="391.0" layoutY="106.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #a6e1ff;" unFocusColor="#4c55d700" />
+   </children>
+</AnchorPane>

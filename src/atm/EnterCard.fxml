@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="CardNumberAP" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="atm.EnterCardController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="383.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@atm.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="continueCardNumButton" layoutX="441.0" layoutY="268.0" onAction="#validateCard" prefHeight="25.0" prefWidth="91.0" ripplerFill="BLACK" style="-fx-background-color: #00879d;" text="Continue" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="cardNumTextField" focusColor="#00879d" layoutX="394.0" layoutY="174.0" prefHeight="30.0" prefWidth="182.0" promptText="Enter Card Number" style="-fx-background-color: #a6e1ff;" unFocusColor="#4c55d700" />
+   </children>
+</AnchorPane>

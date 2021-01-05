@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ATMMenuAP" prefHeight="428.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.ATMMenuController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="383.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@atm.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="427.0" layoutY="81.0" onAction="#balanceInquiry" prefHeight="30.0" prefWidth="121.0" ripplerFill="BLACK" style="-fx-background-color: #00879d;" text="Balance Inquiry" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="427.0" layoutY="198.0" onAction="#withdraw" prefHeight="30.0" prefWidth="121.0" ripplerFill="BLACK" style="-fx-background-color: #00879d;" text="Withdrawl" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="427.0" layoutY="334.0" onAction="#cancel" prefHeight="30.0" prefWidth="121.0" ripplerFill="BLACK" style="-fx-background-color: #ff8167;" text="Cancel" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="427.0" layoutY="142.0" onAction="#transfer" prefHeight="30.0" prefWidth="121.0" ripplerFill="BLACK" style="-fx-background-color: #00879d;" text="Transfer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
